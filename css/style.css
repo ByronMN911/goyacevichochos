@@ -26,6 +26,7 @@ body{
   /*se elige el tamaño de la fuente para el texto dentro del body de la página*/
   font-size: 16px;
 }
+
 /* -- HEADER --*/
 header {
   /* Hace que el header quede fijo al hacer scroll */
@@ -82,10 +83,13 @@ header {
 
 .titulo {
   /* Esta unidad de medida relativa me ayuda ajustar el texto automáticamente si realizo un cambio en la fuente principal en el body */
-  font-size: 1.5rem;    
+  font-size: 1.5rem;
+  
+  /* El tipo de fuente del titulo */
+  font-family: "Poetsen One", sans-serif;
   
   /* Color del texto (gris)*/
-  color: #333;
+  color: #222222;
 }
 
 /* -- PARTE DERECHA DE LA BARRA DEL HEADER -- */
@@ -103,18 +107,26 @@ header {
 
 .menu li a {
   /* Quita el subrayado de las palabras del menú */
-  text-decoration: none;      
-  /* Le da un color gris a las palabras del menú */
-  color: #333;
+  text-decoration: none;
+  /* El tipo de fuente del titulo */
+  font-family: "Poetsen One", sans-serif;   
+  /* Le da un color negro a las palabras del menú */
+  color: rgb(12, 12, 12);
   /* Le da estilo negrita a las palabras del menú */
   font-weight: bold;
-  /*Esta propiedad me permite elegir el tiempo de cambio de color de las palabras en la navegación al posar el mouse en ellas*/
+  /* Esta propiedad me permite elegir el tiempo de cambio de color de las palabras en la navegación al posar el mouse en ellas*/
   transition: color 0.3s;
+  /* Espacio entre los botones */
+  margin-right: 12px;
+  /* Simplifica el movimiento de los botones */
+  display: block;
 }
 
 .menu li a:hover {
    /* Al crear esta pseudo clase hover puedo establecer el color que tendrán las palabras de la navegación al poner el mouse sobre ellas*/
-  color: #ff4081;            
+  color: #ff4081;
+  /* Una pequeña animación de rebote */
+  margin-top: 1.35px;
 }
 
 /* -- BODY -- */
@@ -123,8 +135,7 @@ header {
 
 .principal {
   /* Permite posicionar el texto encima de la imagen */
-  position: relative;         
-  
+  position: relative;
 }
 
 .local {
@@ -136,6 +147,9 @@ header {
   
   /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
   display: block;
+
+  /* Opacidad de la Imagen */
+  opacity: 0.90;
 }
 
 /* Los siguientes estilos me permiten colocar el eslogan del negocio encima de la imágen de la sección principal */
@@ -159,19 +173,31 @@ header {
   text-align: center;
 
   /* Esta unidad de medida relativa me ayuda ajustar el texto automáticamente si realizo un cambio en la fuente principal en el body */
-  font-size: 2rem;
+  font-size: 3rem;
 
   /*Se elige el estilo negrita para el texto*/
   font-weight: bold;
 
   /* Sombra para que se lea bien */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+  text-shadow: 2px 2px 8px rgba(240, 113, 113, 0.699);
+
+  /* Tipo de Fuente */
+  font-family: "Fugaz One", sans-serif;
 
   /*Márgenes internos dentro del contenedor*/
   padding: 20px;
 }
 
+.informacion span {
+  /* Tamaño de la fuente de texto */
+  font-size: 1.6rem;
+
+  /* Estilo de fuente normal sin negrillas */
+  font-weight: normal;
+}
+
 /* -- ACERCA DE -- */
+
 .acerca-de p{
   /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
   display: block;
@@ -231,7 +257,34 @@ header {
 /* -- SECCIÓN DE MAPA INTERACTIVO -- */
 .mapa iframe{
   /*El mapa ocupa el 100% de ancho del contenedor*/
-  width: 100%;
+  width: 50%;
+
+  /* Una posicion relativa para que se pueda mover facilmente y no interfiera con el footer */
+  position: relative;
+
+  /* La separamos un poco del contenido de arriba */
+  margin-top: 24px;
+
+  /* Centrado vertical */       
+  top: 50%;     
+
+  /* Centrado horizontal */              
+  left: 50%;        
+
+  /* Ajusta al centro exacto solo en forma horizontal */
+  transform: translate(-50%, 0%); 
+
+  /* El frame se alinea al centro*/
+  text-align: center;
+
+  /* Le damos una sombra al frame para un mayor contraste */
+  box-shadow: 8px 8px 6px 6px rgba(41, 41, 41, 0.562);
+
+  /* Le damos unos bordes menos rectos para una mejora estetica */
+  border-radius: 6px;
+
+  /* El frame sea en forma bloque */
+  display: block;
 }
 
 /* -- FOOTER -- */
@@ -239,9 +292,12 @@ header {
   /*El texto está alineado al centro del contenedor*/
   text-align: center;
 
+  /* Lo acomodamos un poco alejado del contenido de arriba */
+  margin-top: 30px;
+
   /*Se elige un color de fondo rosa pastel*/
   background-color: #ffc0cb;
 
   /*Se crean bordes internos dentro del contenedor*/
-  padding: 15px;
+  padding: 16px;
 }
