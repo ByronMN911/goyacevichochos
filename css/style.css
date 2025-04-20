@@ -54,7 +54,7 @@ header {
   align-items: center;   
   
   /* Espacio interior arriba, abajo y a los lados */
-  padding: 10px 20px;   
+  padding: 4px 18px;   
   
   /* Se asegura que esté encima de otros elementos */
   z-index: 1000;               
@@ -143,13 +143,10 @@ header {
   width: 100%;          
   
   /* Altura automática según proporción */
-  height:600px;           
+  height: 752px;
   
   /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
   display: block;
-
-  /* Opacidad de la Imagen */
-  opacity: 0.90;
 }
 
 /* Los siguientes estilos me permiten colocar el eslogan del negocio encima de la imágen de la sección principal */
@@ -157,14 +154,14 @@ header {
   /* Permite superponer el texto */
   position: absolute;  
 
-  /* Centrado vertical */       
+  /* Centrado vertical */ 
   top: 50%;     
 
-  /* Centrado horizontal */              
+  /* Centrado horizontal */
   left: 50%;        
 
   /* Ajusta al centro exacto */
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -65%); 
 
   /* Color blanco para las palabras*/
   color: white;
@@ -179,18 +176,18 @@ header {
   font-weight: bold;
 
   /* Sombra para que se lea bien */
-  text-shadow: 2px 2px 8px rgba(240, 113, 113, 0.699);
+  text-shadow: 2px 2px 8px rgba(240, 113, 113, 0.712);
 
   /* Tipo de Fuente */
   font-family: "Fugaz One", sans-serif;
 
   /*Márgenes internos dentro del contenedor*/
-  padding: 20px;
+  padding: 10px;
 }
 
 .informacion span {
   /* Tamaño de la fuente de texto */
-  font-size: 1.6rem;
+  font-size: 1.58rem;
 
   /* Estilo de fuente normal sin negrillas */
   font-weight: normal;
@@ -198,15 +195,98 @@ header {
 
 /* -- ACERCA DE -- */
 
-.acerca-de p{
+.acerca-de {
+
+  width: 75%;
+
+  background-color: #d6cacae5;
+
+  box-shadow: 6px 6px 5px 7px #3d3d3d54;
+
+  /* Una posición relativa para mejor movilidad */
+  position: relative;
+
+  /* Lo alinea todo el texto al centro */
+  text-align: center;
+
+  /* Centrado vertical */ 
+  top: 50%;
+
+  /* Centrado horizontal */
+  left: 50%;
+
+  /* Ajusta al centro exacto */
+  transform: translate(-50%, 10%);
+
+  padding-bottom: 25px;
+
+  padding-left: 10px;
+
+  padding-right: 10px;
+
+  padding-top: 18px;
+
+  /* Esto hace que al momento de darle al boton no se tape el titulo con el header */
+  scroll-margin-top: 90px;
+}
+
+.acerca-de .titulo-acerca-de{
   /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
   display: block;
 
-  /* Se crea un espacio de 20px en la parte inferior del párrafo*/
-  margin-bottom: 20px;
+  /* El tamaño de la fuente de texto */
+  font-size: 24px;
+
+  /* Tipo de Fuente */
+  font-family: "Fugaz One", sans-serif;
+
+  /* Sombra para el titulo */
+  text-shadow: 3px 4px 8px rgba(240, 113, 113, 0.726);
+}
+
+.acerca-de .parrafo1{
+  /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
+  display: block;
+
+  /* Se crea un espacio de 35px en la parte inferior del párrafo*/
+  margin-bottom: 35px;
 
   /*Se crea un espacio de 20px en la parte superior del párrafo*/
-  margin-top: 20px;
+  margin-top: 30px;
+
+  /* El tamaño de la fuente de texto */
+  font-size: 17px;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.acerca-de .parrafo2{
+  /* Me permite dar saltos de línea a párrafos de texto si ya no alcanzan en una línea*/
+  display: block;
+
+  /* El tamaño de la fuente de texto */
+  font-size: 17px;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.acerca-de img{
+  position: relative;
+
+  width: 200px;
+
+  border-radius: 202px;
+
+  border-width: 3.2px;
+
+  border-style: solid;
+
+  border-color: #241a1ae8;
+
+  /* Sombra para la imagen */
+  box-shadow: 4px 5px 18px rgba(240, 113, 113, 0.753);
+
+  margin-top: 25px;
 }
 
 /* -- MENÚ -- */
@@ -220,7 +300,11 @@ header {
 /* Estilos para las imágenes*/
 .imagenes img {
   /*Modifica un ancho de 300px a todas las imágenes del contenedor*/
-  width: 300px;
+  width: 240px;
+  /* Define una altura de 280px para todas las imágenes */
+  height: 280px;
+  /* Añade un espacio entre cada imágen */
+  margin-right: 1px;
 }
 
 .imagenes {

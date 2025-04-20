@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Animaciones AOS (Animation On Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- INICIO CABECERA DE LA PÁGINA-->
@@ -47,26 +50,31 @@
         <!-- FIN SECCIÓN PRINCIPAL-->
       </section>
       <!-- INICIO SECCIÓN ACERCA DE -->
-       <section class="acerca-de" id="acerca-de">
+      <section class="acerca-de" id="acerca-de">
         <!-- Título de la sección y 2 párrafos sobre la historia del negocio -->
-        <h3>SOBRE NOSOTROS</h3>
+         <!-- Titulo con animación "fade up" y su duración -->
+        <h3 class="titulo-acerca-de" data-aos="fade-up" data-aos-duration="460">SOBRE NOSOTROS</h3>
         <div>
-          <p>
+          <!-- Parrafo con animación "fade up" y su duración -->
+          <p class="parrafo1" data-aos="fade-up" data-aos-duration="460">
             Nuestro negocio nació en Quito en el año 2023 con la idea de compartir uno de los sabores más auténticos
             de la cocina ecuatoriana: el cevichocho. Inspirados en la tradición popular y en el amor por los platos
             que nos representan, decidimos crear un espacio donde la frescura de los ingredientes y el sabor casero
             sean los protagonistas. Aquí, cada plato busca mantener viva esa conexión con nuestras raíces, respetando
             la receta original pero con un toque especial que nos distingue.
           </p>
-          <p>
+          <!-- Parrafo con animación "fade up" y su duración -->
+          <p class="parrafo2" data-aos="fade-up" data-aos-duration="460">
             Más que un negocio, somos un punto de encuentro para quienes disfrutan de lo tradicional y lo bien hecho.
             Ya sea que vengas por un ceviche clásico o por un cevichocho cargado de sabor, te aseguramos una experiencia
             llena de sazón, frescura y cariño. Te invitamos a conocernos y a disfrutar de una comida que, más allá de
             alimentar, cuenta una historia.
           </p>
+          <!-- Imagen del logo con animacion AOS "fade up" -->
+          <img src="img/logo.png" alt="logo.png" data-aos="fade-up" data-aos-duration="540">
         </div>
         <!-- FIN SECCIÓN ACERCA DE-->
-       </section>
+      </section>
        <!-- INICIO SECCIÓN MENÚ -->
        <section class="menu" id="menu">
         <!-- Título de la sección -->
@@ -193,5 +201,9 @@
           </div>
           <!-- FIN PIE DE PÁGINA -->
            </footer>
+           <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+           <script>
+             AOS.init();
+           </script>
 </body>
 </html>
