@@ -76,59 +76,69 @@
         <!-- FIN SECCIÓN ACERCA DE-->
       </section>
        <!-- INICIO SECCIÓN MENÚ -->
-       <section class="menu" id="menu">
-        <!-- Título de la sección -->
-        <h3>MENÚ</h3>
-          <div class="producto">
-            <!-- Foto del tipo de producto -->
-              <div class="foto">
-                  <img src="img/helados.jpeg" alt="helados" width="150px" >
-              </div>
-              <!-- Información del producto (nombre y precio) -->
-              <div class="descripcion">
-                  <p> Cono Simple -------- $0.50 </p>
-                  <p> Cono Doble  -------- $1.50 </p>
-                  <p> Tulipan      -------- $2.50 </p>
-                 
-              </div>
-          </div>
-          <div class="producto">
-            <div class="foto">
-                <img src="img/jugos.jpeg" alt="jugos" width="150px" >
-            </div>
-            <div class="descripcion">
-                <p> Naranja Frutilla -------- $1.50</p>
-                <p> Naranja Banano   -------- $1.00</p> 
-                <p>Naranja Fresa    -------- $2.00 </p>
-            </div>
-        </div>
-        <div class="producto">
-          <div class="foto">
-              <img src="img/ceviche.jpeg" alt="ceviche" width="150px">
-          </div>
-          <div class="descripcion">
-              <p> Ceviche de Corvina -------- $2.00 </p> 
-              <p> Ceviche de Camarón -------- $2.50 </p> 
-              <p> Ceviche Mixto      -------- $3.50 </p>
-          </div>
+<h3 class="titulo-menu" id="menu">MENÚ</h3>
+<section class="menu-container">
+  <div class="tabla-menu">
+    <!--- Helados -->
+    <div class="item-menu" data-aos="fade-up">
+      <div class="foto-menu">
+        <img src="img/helados.jpeg" alt="Helados">
       </div>
-      <div class="producto">
-        <div class="foto">
-            <img src="img/cevichochos.jpeg" alt="cevichochos" width="150px">
-        </div>
-        <div class="descripcion">
-            <p>Cevichocho de Cuero      -------- $1.50</p> 
-            <p>Cevichocho de Corvina    -------- $2.50</p>
-            <P>Cevichocho de Camaron    -------- $3.00</P>
-            <p>Cevichocho de Volquetero -------- $3.50</p>
-        </div>
+      <div class="descripcion-menu">
+        <h4>HELADOS</h4>
+        <p><span>Cono Simple</span> <span>$0.50</span></p>
+        <p><span>Cono Doble</span> <span>$1.50</span></p>
+        <p><span>Tulipán</span> <span>$2.50</span></p>
+      </div>
     </div>
-    <!-- FIN SECCIÓN MENÚ -->
+
+    <!--- Jugos -->
+    <div class="item-menu" data-aos="fade-up" data-aos-delay="100">
+      <div class="foto-menu">
+        <img src="img/jugos.jpeg" alt="Jugos naturales">
+      </div>
+      <div class="descripcion-menu">
+        <h4>JUGOS NATURALES</h4>
+        <p><span>Naranja Frutilla</span> <span>$1.50</span></p>
+        <p><span>Naranja Banano</span> <span>$1.00</span></p>
+        <p><span>Naranja Fresa</span> <span>$2.00</span></p>
+      </div>
+    </div>
+
+    <!--- Ceviches -->
+    <div class="item-menu" data-aos="fade-up" data-aos-delay="200">
+      <div class="foto-menu">
+        <img src="img/ceviche.jpeg" alt="Ceviches">
+      </div>
+      <div class="descripcion-menu">
+        <h4>CEVICHES</h4>
+        <p><span>Ceviche de Corvina</span> <span>$2.00</span></p>
+        <p><span>Ceviche de Camarón</span> <span>$2.50</span></p>
+        <p><span>Ceviche Mixto</span> <span>$3.50</span></p>
+      </div>
+    </div>
+
+    <!--- Cevichochos -->
+    <div class="item-menu" data-aos="fade-up" data-aos-delay="300">
+      <div class="foto-menu">
+        <img src="img/cevichochos.jpeg" alt="Cevichochos">
+      </div>
+      <div class="descripcion-menu">
+        <h4>CEVICHOCHOS</h4>
+        <p><span>Cevichocho de Cuero</span> <span>$1.50</span></p>
+        <p><span>Cevichocho de Corvina</span> <span>$2.50</span></p>
+        <p><span>Cevichocho de Camarón</span> <span>$3.00</span></p>
+        <p><span>Cevichocho Volquetero</span> <span>$3.50</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCIÓN MENÚ -->
        </section>
        <!-- INICIO SECCIÓN GALERÍA -->
         <section class="galeria" id="galeria">
           <!-- Título de la sección y dentro de un contenedor van todas las imágenes del carrusél -->
-          <h3>GALERÍA DE IMÁGENES</h3>
+          <h3 class="titulo-galeria">GALERÍA DE IMÁGENES</h3>
           <div class="imagenes">
             <img src="img/f1.jpeg" alt="galeria 1">
             <img src="img/f2.jpeg" alt="galeria 1">
@@ -144,56 +154,84 @@
             <!-- FIN SECCIÓN GALERÍA-->
         </section>
         <!-- INICIO SECCIÓN SUGERENCIAS-->
-         <section class="sugerencias" id="sugerencias">
-          <!-- Título de la sección e información pertinente -->
-          <h3>COMENTARIOS</h3>
-          <p>Llena el siguiente formulario para enviarnos tu opinión sobre nuestros servicios :D</p>
-          <div>
-            <!-- Formulario de sugerencias-->
-          <form>
-            Ingresa tu nombre:<input type="text"> <br>
-            Ingresa tu apellido:<input type="text"> <br>
-            Elige tu género:
-            <select>
-              <option>Hombre</option>
-              <option>Mujer</option>
-              <option>Otro</option> 
-            </select> <br>
-            Escribe tu correo electrónico:<input type="email"> <br>
-            <textarea name="opinion" id="opinion" cols="45" rows="10"></textarea> <br>
-            <input type="submit" title="Enviar">
-          </form>
-        </div>
-        <!-- FIN SECCIÓN SUGERENCIAS-->
-         </section>
-         <!-- INICIO SECCIÓN INFORMACIÓN DE CONTACTO -->
-          <section class="contacto" id="contacto">
-            <!-- Lado izquierdo de la sección -->
-            <div class="datos">
-              <!-- Información importante para contactar con el negocio-->
-              <h3>INFORMACIÓN DE CONTACTO</h3>
-              <p>
-                Dirección: Yanez Pinzón y la niña <br>
-                Número de teléfono: +593 98 924 1559 <br>
-                Correo electrónico: goyacevichochos@gmail.com <br>
-              </p>
-            </div>
-            <!-- Lado derecho de la sección -->
-            <div class="horarios">
-              <h3>HORARIOS DE ATENCIÓN</h3>
-              <p>
-                Lunes a viernes: 7:00am - 8:00pm <br>
-                Sábados y domingos: 8:00am - 4:00pm
-              </p>
-            </div>
-            <!-- FIN SECCIÓN INFORMACIÓN DE CONTACTO -->
-          </section>
+<section class="sugerencias" id="sugerencias">
+  <!-- Título de la sección e información pertinente -->
+  <div class="titulo-sugerencias">
+    <h3>COMENTARIOS Y SUGERENCIAS</h3>
+    <p>Ayúdanos a mejorar nuestros servicios llenando este formulario con tu opinión sobre nuestra atencion</p>
+  </div>
+  
+  <div class="contenedor-formulario">
+    <!-- Formulario de sugerencias-->
+    <form class="formulario-sugerencias">
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td><input type="text" id="nombre" placeholder="Tu nombre"></td>
+        </tr>
+        <tr>
+          <td><label for="apellido">Apellido:</label></td>
+          <td><input type="text" id="apellido" placeholder="Tu apellido"></td>
+        </tr>
+        <tr>
+          <td><label for="genero">Género:</label></td>
+          <td>
+            <select id="genero">
+              <option value="" disabled selected>Selecciona tu género</option>
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+              <option value="otro">Otro</option> 
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Correo electrónico:</label></td>
+          <td><input type="email" id="email" placeholder="tucorreo@ejemplo.com"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="opinion">Tu opinión:</label><br>
+            <textarea id="opinion" placeholder="Escribe aquí tus comentarios..."></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="centrar-boton">
+            <input type="submit" value="Enviar sugerencia" class="boton-enviar">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <!-- FIN SECCIÓN SUGERENCIAS-->
+</section>
           <!-- INICIA SECCIÓN MAPA INTERACTIVO -->
            <section class="mapa" id="mapa">
             <h3>MAPA INTERACTIVO</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7941457352895!2d-78.4860583!3d-0.19945319999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b033bdf7a87%3A0x8c5e3d84909d190!2sGOYA%20MARKET!5e0!3m2!1ses-419!2sec!4v1744595102537!5m2!1ses-419!2sec" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- FIN SECCIÓN MAPA INTERACTIVO -->
            </section>
+           <!-- INICIO SECCIÓN INFORMACIÓN DE CONTACTO -->
+          <section class="contacto" id="contacto">
+            <!-- Lado izquierdo de la sección -->
+            <div class="datos">
+              <!-- Información importante para contactar con el negocio-->
+              <h3>INFORMACIÓN DE CONTACTO</h3>
+              <p>
+                <img src="img/iconos/icono1.png" width="30px" alt="ubicacion"> Dirección: Yanez Pinzón y la niña <br>
+                <img src="img/iconos/icono2.png" width="30px" alt="celular"> Número de teléfono: +593 98 924 1559 <br>
+                <img src="img/iconos/icono3.png" width="30px" alt="email"> Correo electrónico: goyacevichochos@gmail.com <br>
+              </p>
+            </div>
+            <!-- Lado derecho de la sección -->
+            <div class="horarios">
+              <h3>HORARIOS DE ATENCIÓN</h3>
+              <p>
+                <img src="img/iconos/icono4.png" width="30px" alt="calendario"> Lunes a viernes: 7:00am - 8:00pm <br>
+                <img src="img/iconos/icono4.png" width="30px" alt="calendario"> Sábados y domingos: 8:00am - 4:00pm
+              </p>
+            </div>
+          </section>
+          <!-- FIN SECCIÓN INFORMACIÓN DE CONTACTO -->
            <!-- INICIO PIE DE PÁGINA -->
            <footer>
             <div class="pie">
