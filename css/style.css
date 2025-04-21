@@ -386,6 +386,10 @@ header {
 
 /* -- CARRUSEL DE IMÁGENES -- */
 
+.galeria{
+  scroll-margin-top: 90px;
+}
+
 .titulo-galeria{
   /* Coloca el titulo en el centro de la pagina */
   text-align: center;
@@ -395,7 +399,6 @@ header {
   color: #222;
   margin: 44px 0 25px;
   text-shadow: 3px 3px 6px rgba(240, 113, 113, 0.526);
-  scroll-margin-top: 90px;
 }
 
 /* Estilos para las imágenes*/
@@ -407,7 +410,7 @@ header {
   /* Añade un espacio entre cada imágen */
   margin-right: 8px;
   /* Añade un borde a cada imágen */
-  border-radius: 30px;
+  border-radius: 30px; 
 }
 
 .imagenes {
@@ -415,8 +418,7 @@ header {
   display: flex;
 
   /* Me permite crear una barra de desplazamiento horizontal que abarca toda la página*/
-  overflow-x: scroll;
-  
+  overflow-x: scroll; 
 }
 
 /* -- Estilos para la barra de desplazamiento*/
@@ -531,7 +533,101 @@ header {
   background-color: #e0356f;
 }
 
+/* -- SECCIÓN DE CONTACTO -- */
+.titulo-contacto {
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+  color: #222;
+  text-shadow: 3px 3px 6px rgba(240, 113, 113, 0.526);
+  font-size: 2rem;
+  margin: 40px 20px 15px;
+  scroll-margin-top: 90px;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabla-contacto, .tabla-horarios {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.tabla-contacto:hover, .tabla-horarios:hover {
+  transform: translateY(-5px);
+}
+
+.tabla-contacto table, .tabla-horarios table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.encabezado-tabla {
+  font-family: "Poetsen One", sans-serif;
+  color: #ff4081;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #ffc0cb;
+}
+
+.tabla-contacto td, .tabla-horarios td {
+  padding: 12px 8px;
+  vertical-align: middle;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabla-contacto tr:last-child td, 
+.tabla-horarios tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-contacto img, .tabla-horarios img {
+  width: 30px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tabla-contacto tr:not(:first-child) td:first-child, 
+.tabla-horarios tr:not(:first-child) td:first-child {
+  width: 50px;
+}
+
+.tabla-contacto tr:not(:first-child):hover, 
+.tabla-horarios tr:not(:first-child):hover {
+  background-color: #fff5f7;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tabla-contacto, .tabla-horarios {
+    width: 100%;
+    min-width: auto;
+  }
+}
 /* -- SECCIÓN DE MAPA INTERACTIVO -- */
+
+.mapa{
+  scroll-margin-top: 90px;
+}
 
 .mapa h3{
   text-align: center;

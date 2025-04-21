@@ -32,8 +32,8 @@
             <li><a href="#menu">Menú</a></li>
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#sugerencias">Sugerencias</a></li>
-            <li><a href="#contacto">Contacto</a></li>
             <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
         <!-- FIN CABECERA DE LA PÁGINA-->
@@ -44,8 +44,8 @@
         <img src="img/negocio.jpeg" alt="Imagen del negocio" class="local">
         <div class="informacion">
           <!-- Eslogan de la empresa -->
-            <p>COMIDA TÍPICA ECUATORIANA</p>
-            <P><span>Sabor auténtico con raíces de tradición</span></P>
+            <p data-aos="fade-up" data-aos-delay="30">COMIDA TÍPICA ECUATORIANA</p>
+            <P data-aos="fade-up" data-aos-delay="30"><span>Sabor auténtico con raíces de tradición</span></P>
         </div>
         <!-- FIN SECCIÓN PRINCIPAL-->
       </section>
@@ -139,7 +139,7 @@
         <section class="galeria" id="galeria">
           <!-- Título de la sección y dentro de un contenedor van todas las imágenes del carrusél -->
           <h3 class="titulo-galeria">GALERÍA DE IMÁGENES</h3>
-          <div class="imagenes">
+          <div class="imagenes" data-aos="fade-up" data-aos-delay="100">
             <img src="img/f1.jpeg" alt="galeria 1">
             <img src="img/f2.jpeg" alt="galeria 1">
             <img src="img/f3.jpeg" alt="galeria 1">
@@ -161,7 +161,7 @@
     <p>Ayúdanos a mejorar nuestros servicios llenando este formulario con tu opinión sobre nuestra atencion</p>
   </div>
   
-  <div class="contenedor-formulario">
+  <div class="contenedor-formulario" data-aos="fade-up" data-aos-delay="300">
     <!-- Formulario de sugerencias-->
     <form class="formulario-sugerencias">
       <table>
@@ -205,33 +205,55 @@
   <!-- FIN SECCIÓN SUGERENCIAS-->
 </section>
           <!-- INICIA SECCIÓN MAPA INTERACTIVO -->
-           <section class="mapa" id="mapa">
+           <section class="mapa" id="mapa" data-aos="fade-up" data-aos-delay="650">
             <h3>MAPA INTERACTIVO</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7941457352895!2d-78.4860583!3d-0.19945319999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b033bdf7a87%3A0x8c5e3d84909d190!2sGOYA%20MARKET!5e0!3m2!1ses-419!2sec!4v1744595102537!5m2!1ses-419!2sec" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- FIN SECCIÓN MAPA INTERACTIVO -->
            </section>
            <!-- INICIO SECCIÓN INFORMACIÓN DE CONTACTO -->
-          <section class="contacto" id="contacto">
-            <!-- Lado izquierdo de la sección -->
-            <div class="datos">
-              <!-- Información importante para contactar con el negocio-->
-              <h3>INFORMACIÓN DE CONTACTO</h3>
-              <p>
-                <img src="img/iconos/icono1.png" width="30px" alt="ubicacion"> Dirección: Yanez Pinzón y la niña <br>
-                <img src="img/iconos/icono2.png" width="30px" alt="celular"> Número de teléfono: +593 98 924 1559 <br>
-                <img src="img/iconos/icono3.png" width="30px" alt="email"> Correo electrónico: goyacevichochos@gmail.com <br>
-              </p>
-            </div>
-            <!-- Lado derecho de la sección -->
-            <div class="horarios">
-              <h3>HORARIOS DE ATENCIÓN</h3>
-              <p>
-                <img src="img/iconos/icono4.png" width="30px" alt="calendario"> Lunes a viernes: 7:00am - 8:00pm <br>
-                <img src="img/iconos/icono4.png" width="30px" alt="calendario"> Sábados y domingos: 8:00am - 4:00pm
-              </p>
-            </div>
-          </section>
-          <!-- FIN SECCIÓN INFORMACIÓN DE CONTACTO -->
+<section class="contacto" id="contacto">
+  <h3 class="titulo-contacto">CONTÁCTANOS</h3>
+  <div class="contenedor-contacto">
+    <!-- Tabla de información de contacto -->
+    <div class="tabla-contacto" data-aos="fade-up" data-aos-delay="90">
+      <table>
+        <tr>
+          <td colspan="2" class="encabezado-tabla">Información de Contacto</td>
+        </tr>
+        <tr>
+          <td><img src="img/iconos/icono1.png" alt="ubicación"></td>
+          <td>Yanez Pinzón y la niña, Quito</td>
+        </tr>
+        <tr>
+          <td><img src="img/iconos/icono2.png" alt="teléfono"></td>
+          <td>+593 98 924 1559</td>
+        </tr>
+        <tr>
+          <td><img src="img/iconos/icono3.png" alt="email"></td>
+          <td>goyacevichochos@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+    
+    <!-- Tabla de horarios -->
+    <div class="tabla-horarios" data-aos="fade-up" data-aos-delay="90">
+      <table>
+        <tr>
+          <td colspan="2" class="encabezado-tabla">Horarios de Atención</td>
+        </tr>
+        <tr>
+          <td><img src="img/iconos/icono4.png" alt="días laborales"></td>
+          <td>Lunes a viernes:<br>7:00am - 8:00pm</td>
+        </tr>
+        <tr>
+          <td><img src="img/iconos/icono4.png" alt="fin de semana"></td>
+          <td>Sábados y domingos:<br>8:00am - 4:00pm</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCIÓN INFORMACIÓN DE CONTACTO -->
            <!-- INICIO PIE DE PÁGINA -->
            <footer>
             <div class="pie">
