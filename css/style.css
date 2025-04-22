@@ -565,76 +565,107 @@ header {
 }
 
 .tabla-contacto:hover, .tabla-horarios:hover {
+  /*permite mover un elemento verticalmente en el eje y*/
   transform: translateY(-5px);
 }
 
 .tabla-contacto table, .tabla-horarios table {
+  /*establece el ancho a un elemento*/
   width: 100%;
+  /*hace que los bordes de un tablan colapsen si deben haxerlo*/
   border-collapse: collapse;
 }
 
 .encabezado-tabla {
+  /*estalece un tipo de fuente a un elemento*/
   font-family: "Poetsen One", sans-serif;
+  /*establece color a un elemento*/
   color: #ff4081;
+  /*establece el tamaño de fuente de un elemento*/
   font-size: 1.3rem;
+  /*establece el espacio inferior entre contenido y elemento*/
   padding-bottom: 15px;
+  /*alinea el texto al centro*/
   text-align: center;
+  /*establece el ancho y el color a un elemento*/
   border-bottom: 2px solid #ffc0cb;
 }
 
 .tabla-contacto td, .tabla-horarios td {
+  /*establece espacio entre un contenido y el borde de un elemento*/
   padding: 12px 8px;
+  /*establece un alineacion vertical a un elemento*/
   vertical-align: middle;
+  /*establece un tipo de fuente al texto*/
   font-family: "Roboto Mono", monospace;
+  /*establece ancho y color a un elemento*/
   border-bottom: 1px solid #f0f0f0;
 }
 
 .tabla-contacto tr:last-child td, 
 .tabla-horarios tr:last-child td {
+  /*elimina el borde inferior de un elemento*/
   border-bottom: none;
 }
 
 .tabla-contacto img, .tabla-horarios img {
+  /*establece el ancho de un elemento*/
   width: 30px;
+  /*establece la altura de un elemento*/
   height: auto;
+  /*establece un tippo de visualizacion en bloque*/
   display: block;
+  /*establece el margen superior e inferior en 0*/
   margin: 0 auto;
 }
 
 .tabla-contacto tr:not(:first-child) td:first-child, 
 .tabla-horarios tr:not(:first-child) td:first-child {
+  /*establece el ancho de un elemento*/
   width: 50px;
 }
 
 .tabla-contacto tr:not(:first-child):hover, 
 .tabla-horarios tr:not(:first-child):hover {
+  /*establece color de fondo*/
   background-color: #fff5f7;
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .contenedor-contacto {
+     /*define la direccion en la que van los elementos hijos*/
     flex-direction: column;
+    /*centra elementos*/
     align-items: center;
   }
   
   .tabla-contacto, .tabla-horarios {
+    /*establece el ancho de un elemento disponible de otro elemento*/
     width: 100%;
+    /*establece el ancho minimo de un elemento*/
     min-width: auto;
   }
 }
 /* -- SECCIÓN DE MAPA INTERACTIVO -- */
 
 .mapa{
+  /*establece un margen superior a un elemento cuando se desplaza hacia el*/
   scroll-margin-top: 90px;
 }
 
 .mapa h3{
+  /*centra el texto*/
   text-align: center;
+  /*establece una fuente al texto*/
   font-family: "Fugaz One", sans-serif;
+  /*establece color al texto*/
   color: #222;
+  /*agrega sombra al texto*/
   text-shadow: 3px 3px 6px rgba(240, 113, 113, 0.526);
+  /*establece el tamaño de fuente*/
   font-size: 2rem;
+  /*establece un margen inferior*/
   margin-bottom: 10px;
 }
 
@@ -671,12 +702,14 @@ header {
 }
 
 .contacto h3{
+  /*establece una fuente a un elemento HTMl*/
   font-family: "Fugaz One", sans-serif;
-
+/*establece grosor a la fuente en negrita*/
   font-weight: bold;
 }
 
 .contacto p{
+  /*Coloca tipo de fuente*/
   font-family: "Roboto Mono", monospace;
 }
 
