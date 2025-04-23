@@ -289,9 +289,8 @@ header {
   margin-top: 25px;
 }
 
-/* -- MENÚ -- */
-
 /* -- SECCIÓN MENÚ -- */
+
 .titulo-menu {
   /* Tipo de fuente */
   font-family: "Fugaz One", sans-serif;
@@ -382,8 +381,6 @@ header {
   font-weight: bold;
 }
 
-
-
 /* -- CARRUSEL DE IMÁGENES -- */
 
 .galeria{
@@ -437,11 +434,10 @@ header {
 
 /* -- SECCIÓN DE SUGERENCIAS --*/
 
-/* -- SECCIÓN DE SUGERENCIAS --*/
 .sugerencias {
   padding: 40px 20px;
   margin-top: 50px;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 35px;
 }
 
 .titulo-sugerencias {
@@ -462,6 +458,8 @@ header {
   font-size: 1.1rem;
   font-family: "Roboto Mono", monospace;
 }
+
+/* SECCIÓN FORMULARIO */
 
 .contenedor-formulario {
   max-width: 700px;
@@ -631,27 +629,11 @@ header {
   background-color: #fff5f7;
 }
 
-/* Responsive para móviles */
-@media (max-width: 768px) {
-  .contenedor-contacto {
-     /*define la direccion en la que van los elementos hijos*/
-    flex-direction: column;
-    /*centra elementos*/
-    align-items: center;
-  }
-  
-  .tabla-contacto, .tabla-horarios {
-    /*establece el ancho de un elemento disponible de otro elemento*/
-    width: 100%;
-    /*establece el ancho minimo de un elemento*/
-    min-width: auto;
-  }
-}
 /* -- SECCIÓN DE MAPA INTERACTIVO -- */
 
 .mapa{
   /*establece un margen superior a un elemento cuando se desplaza hacia el*/
-  scroll-margin-top: 90px;
+  scroll-margin-top: 175px;
 }
 
 .mapa h3{
@@ -714,6 +696,7 @@ header {
 }
 
 /* -- FOOTER -- */
+
 .pie p{
   /*El texto está alineado al centro del contenedor*/
   text-align: center;
@@ -726,4 +709,384 @@ header {
 
   /*Se crean bordes internos dentro del contenedor*/
   padding: 16px;
+}
+
+/* MEDIA QUERIES */
+
+/* Media Queries para Tablets */
+@media (max-width: 800px) {
+  * {
+    /* Establece el ancho minimo de un elemento */
+    min-width: auto;
+  }
+
+  /* Sección header */
+
+  .logo {
+    /* Tamaño del logo */
+    width: 40px;
+  }
+
+  .titulo {
+    /* Define el tamaño de la fuente */
+    font-size: 15px;
+  }
+
+  .menu li a {
+    /* Define el tamaño de la fuente */
+    font-size: 14px;
+    /* Espacio entre los botones */
+    margin-right: 6px;
+  }
+
+  /* Sección main */
+
+  .principal {
+    /* Define la direccion en la que van los elementos */
+    flex-direction: column;
+    /* Centra los elementos */
+    align-items: center;
+  }
+
+  .principal .local {
+    /* La altura de la imágen */
+    height: 532px;
+  }
+
+  .principal .informacion {
+    /* Define el tamaño de la fuente */
+    font-size: 38px;
+    /* La anchura del contenedor */
+    width: 100%;
+  }
+
+  .principal .informacion span{
+    /* Define el tamaño de la fuente */
+    font-size: 23px;
+  }
+
+  /* Sección acerca de */
+
+  .acerca-de {
+    scroll-margin-top: 55px;
+  }
+
+  .acerca-de .titulo-acerca-de {
+    /* Define el tamaño de la fuente */
+    font-size: 24px;
+  }
+
+  .acerca-de .parrafo1 {
+    /* Define el tamaño de la fuente */
+    font-size: 13px;
+  }
+
+  .acerca-de .parrafo2 {
+    /* Define el tamaño de la fuente */
+    font-size: 13px;
+  }
+
+  .acerca-de img {
+    /* Define el tamaño de la imágen */
+    width: 130px;
+  }
+
+  /* Sección menu */
+
+  .menu-container p {
+    /* Define el tamaño de la fuente a los parrafos */
+    font-size: 13px;
+  }
+
+  .menu-container h4 {
+    /* Define el tamaño de la fuente de los subtitulos del menu */
+    font-size: 18px;
+  }
+
+  .foto-menu {
+    /* Define la anchura de la imagen */
+    width: 100%;
+    /* Define la altura de la imagen */
+    height: 100px;
+    /* Oculta el desbordamiento */
+    overflow: hidden;
+  }
+  
+  .foto-menu img {
+    /* Define la anchura de la imagen */
+    width: 100%;
+    /* Define la altura de la imagen */
+    height: 100%;
+  }
+
+  /* Sección carrusel de imágenes o galeria */
+
+  .galeria .titulo-galeria {
+    /* Define el tamaño de la fuente */
+    font-size: 26px;
+  }
+
+  .galeria img {
+    /* Define la altura de la imágen */
+    height: 220px;
+  }
+
+  /* Sección sugerencias */
+
+  .sugerencias .titulo-sugerencias h3 {
+    /* Define el tamaño de la fuente */
+    font-size: 24px;
+  }
+
+  .sugerencias .titulo-sugerencias p {
+    /* Define el tamaño de la fuente */
+    font-size: 16px;
+  }
+
+  .contenedor-formulario {
+    /* Define la maxima anchura del contenedor */
+    max-width: 560px;
+    /* Le da un borde circular al contenedor */
+    border-radius: 12px;
+    /* Acomoda los elementos del contenedor */
+    padding: 10px 30px 10px 30px;
+  }
+
+  /* Sección mapa */
+
+  .mapa h3{
+    /* Define el tamaño de la fuente */
+    font-size: 24px;
+  }
+
+  .mapa iframe {
+    /* Define la altura del mapa */
+    height: 310px;
+  }
+
+  /* Sección contactos */
+
+  .contacto h3{
+    /* Define el tamaño de la fuente */
+    font-size: 24px;
+  }
+
+  .tabla-contacto, .tabla-horarios {
+    /* Define el ancho minimo de la tablas */
+    min-width: 200px;
+  }
+
+  .tabla-contacto td , .tabla-horarios td {
+    /* Define el tamaño de la fuente */
+    font-size: 16px;
+  }
+
+  /* Sección footer */
+
+  .pie p{
+    /* Define el tamaño de la fuente */
+    font-size: 12px;
+  }
+}
+
+
+/* Media Queries para Celulares */
+
+@media (max-width: 400px) {
+  * {
+    /* Establece el ancho minimo de un elemento */
+    min-width: auto;
+  }
+
+  /* Sección header */
+
+  .logo {
+    /* Tamaño del logo */
+    width: 32px;
+    /* Posicionamos el logo mas a la izquierda */
+    margin-left: -15px;
+  }
+
+  .titulo {
+    /* Define el tamaño de la fuente */
+    font-size: 10px;
+    /* Alinea el texto al centro */
+    text-align: center;
+  }
+
+  .izquierda {
+    /* El espacio entre el titulo y el logo */
+    gap: 2px;
+  }
+
+  .menu li a {
+    /* Define el tamaño de la fuente */
+    font-size: 7.6px;
+    /* Espacio entre los botones */
+    margin-right: -10.4px;
+    /* Alinea el texto al centro */
+    text-align: center;
+  }
+
+  /* Sección main */
+
+  .principal {
+    /* Define la direccion en la que van los elementos */
+    flex-direction: column;
+    /* Centra los elementos */
+    align-items: center;
+  }
+
+  .principal .local {
+    /* La altura de la imágen */
+    height: 532px;
+  }
+
+  .principal .informacion {
+    /* Define el tamaño de la fuente */
+    font-size: 24px;
+    /* La anchura del contenedor */
+    width: 100%;
+  }
+
+  .principal .informacion span{
+    /* Define el tamaño de la fuente */
+    font-size: 20px;
+  }
+
+  /* Sección acerca de */
+
+  .acerca-de {
+    /* Acomoda al momento de acer scroll con el boton para que no tape el header */
+    scroll-margin-top: 55px;
+  }
+
+  .acerca-de .titulo-acerca-de {
+    /* Define el tamaño de la fuente */
+    font-size: 20px;
+  }
+
+  .acerca-de .parrafo1 {
+    /* Define el tamaño de la fuente */
+    font-size: 13px;
+  }
+
+  .acerca-de .parrafo2 {
+    /* Define el tamaño de la fuente */
+    font-size: 13px;
+  }
+
+  .acerca-de img {
+    /* Define el tamaño de la imágen */
+    width: 118px;
+  }
+
+  /* Sección menu */
+
+  .titulo-menu {
+    /* Define el tamaño de la fuente */
+    font-size: 20px;
+  }
+
+  .menu-container p {
+    /* Define el tamaño de la fuente a los parrafos */
+    font-size: 11px;
+  }
+
+  .menu-container h4 {
+    /* Define el tamaño de la fuente de los subtitulos del menu */
+    font-size: 16px;
+  }
+
+  .foto-menu {
+    /* Define la anchura de la imagen */
+    width: 100%;
+    /* Define la altura de la imagen */
+    height: 100px;
+    /* Oculta el desbordamiento */
+    overflow: hidden;
+  }
+  
+  .foto-menu img {
+    /* Define la anchura de la imagen */
+    width: 100%;
+    /* Define la altura de la imagen */
+    height: 100%;
+  }
+
+  /* Sección carrusel de imágenes o galeria */
+
+  .galeria .titulo-galeria {
+    /* Define el tamaño de la fuente */
+    font-size: 22px;
+  }
+
+  .galeria img {
+    /* Define la altura de la imágen */
+    height: 195px;
+  }
+
+  /* Sección sugerencias */
+
+  .sugerencias .titulo-sugerencias h3 {
+    /* Define el tamaño de la fuente */
+    font-size: 20px;
+  }
+
+  .sugerencias .titulo-sugerencias p {
+    /* Define el tamaño de la fuente */
+    font-size: 14px;
+  }
+
+  .contenedor-formulario {
+    /* Define la maxima anchura del contenedor */
+    max-width: 500px;
+    /* Le da un borde circular al contenedor */
+    border-radius: 12px;
+    /* Acomoda los elementos del contenedor */
+    padding: 6px 20px 6px 20px;
+  }
+
+  /* Sección mapa */
+
+  .mapa h3{
+    /* Define el tamaño de la fuente */
+    font-size: 22px;
+  }
+
+  .mapa iframe {
+    /* Define la altura del mapa */
+    height: 300px;
+    /* Define la anchura del mapa */
+    width: 310px;
+  }
+
+  /* Sección contactos */
+
+  .contacto {
+    /* Acomoda al momento de scrollear despues de dar click en el boton */
+    scroll-margin-top: 55px;
+  }
+
+  .contacto h3{
+    /* Define el tamaño de la fuente */
+    font-size: 22px;
+  }
+
+  .tabla-contacto, .tabla-horarios {
+    /* Define el ancho minimo de la tablas */
+    min-width: 175px;
+  }
+
+  .tabla-contacto td , .tabla-horarios td {
+    /* Define el tamaño de la fuente */
+    font-size: 13px;
+  }
+
+  /* Sección footer */
+
+  .pie p{
+    /* Define el tamaño de la fuente */
+    font-size: 9px;
+  }
 }
