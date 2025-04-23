@@ -16,7 +16,8 @@
 
 /* -- BODY DE LA PÁGINA --*/
 body{
-  /* Se elige el tipo de fuente que se usará en la página, debe ser acorde a la fuente de la API de google establecida en el archivo HTML*/
+  /* Se elige el tipo de fuente que se usará en la página, debe ser acorde a la fuente de la API de
+   google establecida en el archivo HTML*/
   font-family: 'Libre Baskerville', serif;
 
   /*Se establece un fondo para la página que es una imágen con textura*/
@@ -82,7 +83,8 @@ header {
 }
 
 .titulo {
-  /* Esta unidad de medida relativa me ayuda ajustar el texto automáticamente si realizo un cambio en la fuente principal en el body */
+  /* Esta unidad de medida relativa me ayuda ajustar el texto automáticamente si realizo un cambio
+   en la fuente principal en el body */
   font-size: 1.5rem;
   
   /* El tipo de fuente del titulo */
@@ -114,7 +116,8 @@ header {
   color: rgb(12, 12, 12);
   /* Le da estilo negrita a las palabras del menú */
   font-weight: bold;
-  /* Esta propiedad me permite elegir el tiempo de cambio de color de las palabras en la navegación al posar el mouse en ellas*/
+  /* Esta propiedad me permite elegir el tiempo de cambio de color de las palabras en la navegación
+   al posar el mouse en ellas*/
   transition: color 0.3s;
   /* Espacio entre los botones */
   margin-right: 12px;
@@ -123,7 +126,8 @@ header {
 }
 
 .menu li a:hover {
-   /* Al crear esta pseudo clase hover puedo establecer el color que tendrán las palabras de la navegación al poner el mouse sobre ellas*/
+   /* Al crear esta pseudo clase hover puedo establecer el color que tendrán las palabras de la
+    navegación al poner el mouse sobre ellas*/
   color: #ff4081;
   /* Una pequeña animación de rebote */
   margin-top: 1.35px;
